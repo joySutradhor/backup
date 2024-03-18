@@ -3,17 +3,6 @@
 main
 
 ------------------------------------------- */
-
-@font-face {
-    font-family: 'rotabold';
-    src: url('../fonts/Rota-Bold.otf') format('opentype') ;
-  }
-  
-  @font-face {
-    font-family: 'ethosNovamedium';
-    src: url('../fonts/EthosNova-Medium.otf') format('opentype') ;
-  }
-  
 *,
 *:before,
 *:after {
@@ -26,9 +15,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'rotabold';
+    font-family: $font-1;
     font-size: $text;
-    font-weight: 300;
+    font-weight: 500;
     color: $dt-50;
     line-height: 150%;
     overscroll-behavior: none;
@@ -99,9 +88,8 @@ h4,
 h5,
 .mil-h5,
 h6,
-.mil-h6
- {
-    font-family: 'rotabold';
+.mil-h6 {
+    font-family: $font-1;
     color: $dark;
     font-weight: 700;
     line-height: 120%;
@@ -491,7 +479,7 @@ button
     border: none;
     letter-spacing: 2px;
     font-size: 12px;
-    background-color: $accent;
+    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
     color: $dark;
     border-radius: 70px;
     padding: 0 15px 0 50px;
@@ -514,7 +502,7 @@ button
         transition: $t-md;
 
         & path {
-            fill: $accent;
+            fill: whitesmoke;
         }
     }
 
@@ -532,7 +520,10 @@ button
 
         & svg {
             margin-left: 0;
-            background-color: $accent;
+            background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
 
             & path {
                 fill: $dark;
@@ -594,7 +585,6 @@ textarea {
     border: none;
     border-bottom: solid 1px $dt-20;
     margin-bottom: 30px;
-    
 
     &:focus {
         outline: inherit;
@@ -685,7 +675,7 @@ breadcrumbs
 
             & a {
                 &:hover {
-                    color: $accent !important;
+                    color: red !important;
                 }
             }
         }
@@ -703,28 +693,29 @@ backgrounds
 
 ------------------------------------------- */
 .mil-dark-bg {
-    // position: relative;
-    
-    // &:before {
-    //     content: '';
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     pointer-events: none;
-    //     z-index: 2;
-    //     backdrop-filter: invert(100%);
-    // }
+    position: relative;
 
-    // & .mi-invert-fix {
-    //     height: 100%;
-    //     position: relative;
-    //     pointer-events: none;
-    //     z-index: 3;
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+        z-index: -2;
+        background-color: #111111;
+        // backdrop-filter: invert(100%);
+    }
 
-    //     & .container {
-    //         pointer-events: all;
-    //     }
-    // }
+    & .mi-invert-fix {
+        height: 100%;
+        position: relative;
+        pointer-events: none;
+        z-index: 3;
+
+        & .container {
+            pointer-events: all;
+        }
+    }
 }
 
 .mil-soft-bg {
@@ -894,4 +885,12 @@ spaces
         margin-right: 50px;
         margin-bottom: 30px;
     }
+}
+
+
+.gradient-color {
+    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

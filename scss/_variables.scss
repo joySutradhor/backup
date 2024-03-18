@@ -1,24 +1,18 @@
-// @import url('https://fonts.googleapis.com/css2?family=rotablack:wght@100;200;300;400;500;600;700;800;900&display=swap');
-// @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
-
 
 @font-face {
     font-family: 'rotabold';
     src: url('../fonts/Rota-Bold.otf') format('opentype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
 
-@font-face {
-    font-family: 'ethosNovamedium';
-    src: url('fonts/EthosNova-Medium.otf') format('opentype');
-}
 
-$font-1: rotabold;
+
+$font-1: "Outfit", sans-serif;
 
 $dark: rgba(0, 0, 0, 1);
 $light: rgba(255, 255, 255, 1);
-// change color 
-// $accent: rgba(255, 152, 0, 1);
-// $accent: red;
+$accent: rgba(255, 152, 0, 1);
 
 $dt-2: rgba(0, 0, 0, .02);
 $dt-5: rgba(0, 0, 0, .05);

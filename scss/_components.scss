@@ -49,7 +49,7 @@ preloader
                     position: absolute;
                     opacity: 0;
                     height: 100%;
-                    background-color: $accent;
+                    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
                 }
             }
         }
@@ -157,7 +157,7 @@ scrollbar
     & .mil-progress {
         width: 4px;
         height: 0;
-        background-color: $accent;
+        background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
     }
 
     @media screen and (max-width: 992px) {
@@ -463,7 +463,10 @@ menu
 
             &:hover {
                 transform: translateX(5px);
-                color: $light;
+                background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
         }
     }
@@ -543,18 +546,18 @@ menu
             }
 
             &.mil-active {
-                & > a {
+                &>a {
                     color: $accent;
 
                     &:hover {
-                        color: $accent !important;
+                        color: red !important;
                         filter: brightness(110%);
                     }
                 }
             }
 
             &.mil-has-children {
-                & > a {
+                &>a {
                     &:hover {
                         color: $light;
                         padding-left: 25px;
@@ -1264,7 +1267,7 @@ services
         left: 0;
         height: 4px;
         width: 0;
-        background-color: $accent;
+        background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
         transition: $t-lg;
     }
 
@@ -1433,7 +1436,7 @@ team
         left: 0;
         height: 4px;
         width: 0;
-        background-color: $accent;
+        background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
         transition: $t-lg;
     }
 
@@ -1484,7 +1487,9 @@ team
                 transition: $t-sm;
 
                 &:hover {
-                    color: $accent;
+                    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -1551,7 +1556,10 @@ social icons
             transition: $t-md;
 
             &:hover {
-                color: $accent;
+                background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
         }
     }
@@ -1611,7 +1619,7 @@ revievs
         }
 
         & .mil-custom-dot {
-            // background-color: red;
+            background-color: red;
             width: 90px;
             height: 90px;
             border-radius: 50%;
@@ -1626,37 +1634,37 @@ revievs
 
 
             &.mil-slide-1 {
-                background-image: url(../img/client/client1.png);
+                background-image: url(../img/faces/customers/1.jpg);
             }
 
             &.mil-slide-2 {
-                background-image: url(../img/client/client2.png);
+                background-image: url(../img/faces/customers/2.jpg);
             }
 
             &.mil-slide-3 {
-                background-image: url(../img/client/client3.png);
+                background-image: url(../img/faces/customers/3.jpg);
             }
 
             &.mil-slide-4 {
-                background-image: url(../img/client/client1.png);
+                background-image: url(../img/faces/customers/4.jpg);
             }
 
             &.mil-slide-5 {
-                background-image: url(../img/client/client2.png);
+                background-image: url(../img/faces/customers/5.jpg);
             }
 
             &.mil-slide-6 {
-                background-image: url(../img/client/client3.png);
+                background-image: url(../img/faces/customers/6.jpg);
             }
 
             &.mil-slide-7 {
-                background-image: url(../img/client/client1.png);
+                background-image: url(../img/faces/customers/7.jpg);
             }
         }
 
         &.swiper-pagination-bullet-active {
 
-            // box-shadow: inset 0 0 0 4px red !important;
+            box-shadow: inset 0 0 0 4px #09E5E5;
         }
     }
 
@@ -1670,7 +1678,7 @@ revievs
     margin-bottom: 15px;
 
     & path {
-        fill: $accent;
+        fill: #09E5E5;
     }
 }
 
@@ -1943,7 +1951,10 @@ footer
 
                 &:hover {
                     transform: translateX(10px);
-                    color: $accent;
+                    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                 }
 
                 @media screen and (max-width: 768px) {
@@ -1953,7 +1964,10 @@ footer
 
             &.mil-active {
                 & a {
-                    color: $accent;
+                    background: linear-gradient(135.72deg, #09E5E5 -12.91%, #12E6DC -0.28%, #2BEAC5 20.76%, #55F1A0 48.11%, #8EFA6D 79.68%, #A8FF57 92.3%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
 
                     &:hover {
                         transform: none;
@@ -2472,7 +2486,7 @@ images
     position: relative;
     overflow: hidden;
 
-    & > img {
+    &>img {
         position: absolute;
         top: 0;
         left: 0;
